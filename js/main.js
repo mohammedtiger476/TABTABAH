@@ -197,10 +197,10 @@ btn_mode.addEventListener("click", () => {
     });
     document.querySelector("footer").style.background = "#2f4e6b";
     document.querySelector(".main-img").style.background = "#2f4e6b";
-    document.querySelector(".home").style.background = 'url("./assets/images/Gemini_Generated_Image_ounp8sounp8sounp.jfif")'
+    document.querySelector(".home").style.background = 'url("assets/images/Gemini_Generated_Image_ounp8sounp8sounp.jfif")'
     document.getElementById("castum").style.background = "#2f4e6b";
     document.getElementById("image").style.boxShadow = " 0 3px 5px #99a8b654, 0 0 10px #a4b3c254 inset";
-    document.querySelector(".SH-A").style.background = 'url("./assets/images/Gemini_Generated_Image_ounp8sounp8sounp.jfif")'
+    document.querySelector(".SH-A").style.background = 'url("assets/images/Gemini_Generated_Image_ounp8sounp8sounp.jfif")'
     check = false;
   } else {
     back_mode.style.translate = "0 0";
@@ -215,8 +215,8 @@ btn_mode.addEventListener("click", () => {
     });
     document.querySelector("footer").style.background = "#e5f1fb";
     document.querySelector(".main-img").style.background = "#e5f1fb";
-    document.querySelector(".home").style.background = 'url("../assets/images/SH_A\ \(2\).jpg")'
-    document.querySelector(".SH-A").style.background = 'url("../assets/images/SH_A\ \(2\).jpg")'
+    document.querySelector(".home").style.background = 'url("assets/images/SH_A\ \(2\).jpg")'
+    document.querySelector(".SH-A").style.background = 'url("assets/images/SH_A\ \(2\).jpg")'
      document.getElementById("castum").style.background = "#e5f1fb";
     document.getElementById("image").style.boxShadow = " 0 3px 5px #2f4e6b54, 0 0 5px black inset";
     check = true;
