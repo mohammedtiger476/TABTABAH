@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TABTABAH | طبطبه 🫳</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- استبدل مكتبة html2canvas بهاد الرابط -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image-more/3.3.0/dom-to-image-more.min.js"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="btn_mode" class="btn_mode" hidden>
+      <span id="back_mode" class="back_mode"></span>
+      <span id="sun" class="sun">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+        >
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path
+            fill="currentColor"
+            d="M12 6a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1m9 5h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2M6 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h2a1 1 0 0 0 1-1m.22-7a1 1 0 0 0-1.39 1.47l1.44 1.39a1 1 0 0 0 .73.28a1 1 0 0 0 .72-.31a1 1 0 0 0 0-1.41ZM17 8.14a1 1 0 0 0 .69-.28l1.44-1.39A1 1 0 0 0 17.78 5l-1.44 1.42a1 1 0 0 0 0 1.41a1 1 0 0 0 .66.31M12 18a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1m5.73-1.86a1 1 0 0 0-1.39 1.44L17.78 19a1 1 0 0 0 .69.28a1 1 0 0 0 .72-.3a1 1 0 0 0 0-1.42Zm-11.46 0l-1.44 1.39a1 1 0 0 0 0 1.42a1 1 0 0 0 .72.3a1 1 0 0 0 .67-.25l1.44-1.39a1 1 0 0 0-1.39-1.44ZM12 8a4 4 0 1 0 4 4a4 4 0 0 0-4-4"
+          />
+        </svg>
+      </span>
+      <span id="moon" class="moon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+        >
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path
+            fill="currentColor"
+            d="M12 3.5a8.5 8.5 0 1 0 8.46 9.32a.5.5 0 0 0-.812-.435a5 5 0 1 1-6.137-7.893a.5.5 0 0 0-.225-.895A8.6 8.6 0 0 0 12 3.5"
+          />
+        </svg>
+      </span>
+    </div>
+
+    <section class="home" id="home">
+      <div class="container">
+        <div class="title">
+          <h1>طبطبه</h1>
+          <p>
+            هطبطب عليكي بكل الأساليب حتى لما<br />
+            مكُنش هنا
+          </p>
+        </div>
+
+        <div class="btns">
+          <button class="shar3">شرعي</button>
+          <button class="jawafa">جوافة</button>
+          <button class="aam">عام</button>
+        </div>
+
+        <div class="main-img">
+          <img style="position: absolute" src="" alt="" />
+          <p>تفاءلوا بالخير تجدوه فالحياة تبدأ حيث تتمنى</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAR3 -->
+    <section class="SH-A sec" hidden>
+      <div class="container">
+        <div class="title">
+          <h1>طبطبه</h1>
+          <p>
+            هطبطب عليكي بكل الأساليب حتى لما<br />
+            مكُنش هنا
+          </p>
+        </div>
+
+        <div class="content">
+          <h2>شرعي</h2>
+          <p>طبطبه من الآثار الإسلامية</p>
+          <button class="click btn_sec">اضغطي يمثمث</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAWAFHA -->
+    <section class="SH-A sec" hidden>
+      <div class="container">
+        <div class="title">
+          <h1>طبطبه</h1>
+          <p>
+            هطبطب عليكي بكل الأساليب حتى لما<br />
+            مكُنش هنا
+          </p>
+        </div>
+
+        <div class="content">
+          <h2>جوافه</h2>
+          <p style="width: 100%">طبطبه جوافيه رفيعة الطراز</p>
+          <button  class="click btn_sec">اضغطي يمثمث</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- AAAM -->
+    <section class="SH-A sec" hidden>
+      <div class="container">
+        <div class="title">
+          <h1>طبطبه</h1>
+          <p>
+            هطبطب عليكي بكل الأساليب حتى لما<br />
+            مكُنش هنا
+          </p>
+        </div>
+
+        <div class="content">
+          <h2>عام</h2>
+          <p>طبطبه عامة للأحزان الهامة</p>
+          <button class="click btn_sec">اضغطي يمثمث</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAVE SECTIO -->
+    <section id="save" class="SH-A" hidden>
+      <div class="container">
+        <div class="title">
+          <h1>طبطبه</h1>
+          <p>
+            هطبطب عليكي بكل الأساليب حتى لما<br />
+            مكُنش هنا
+          </p>
+        </div>
+
+        <div class="content">
+          <p id="save_content"></p>
+          <!-- <button class="click">اضغطي يمثمث</button> -->
+          <button id="next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                fill="currentColor"
+                d="M11.79 6.29L6.09 12l5.7 5.71l1.42-1.42L9.91 13H18v-2H9.91l3.3-3.29z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- SAVE SECTIO END -->
+
+    <section id="castum" class="castum"hidden >
+      <div class="container">
+        <h2>كيف حابة تحفظيها اليوم</h2>
+        <div class="image" id="image">
+          <h1 id="castum_content">محمد</h1>
+        </div>
+
+        <div class="castums">
+
+          <div>
+            <button onclick="document.getElementById('color-current').click()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  fill="currentColor"
+                  d="M10.97 20.39c1.12-1.12 1.71-2.85 1.55-4.49l8.56-8.56c1.22-1.22 1.22-3.2 0-4.41s-3.2-1.22-4.41 0L7.8 11.78c-.71.06-1.41.27-2.01.64c-1.17.72-1.81 1.89-1.81 3.29c0 .3.02.59.04.86c.08 1.03.11 1.42-1.47 2.21c-.32.16-.53.47-.55.82s.14.69.43.89c1 .69 2.76 1.49 4.62 1.49c1.35 0 2.74-.42 3.92-1.6Zm7.12-16.06c.44-.44 1.15-.44 1.59 0s.44 1.15 0 1.58l-7.86 7.86a4.4 4.4 0 0 0-1.65-1.52zM6.02 16.42a8 8 0 0 1-.04-.71c0-.7.29-1.23.86-1.59c.68-.42 1.66-.49 2.31-.16c.65.32.99.81 1.18 1.28l-.05.05l.1.1c.05.16.09.32.12.47c.18 1.09-.22 2.37-.96 3.11c-1.44 1.44-3.31 1.1-4.58.61c1.09-.98 1.13-1.99 1.04-3.16Z"
+                />
+              </svg>
+              <input type="color" id="color-current" style="position: absolute; z-index: -2; opacity: 0;">
+            </button>
+            <span>لون الخط</span>
+          </div>
+          <div>
+            <button id="size" style="position: relative;">
+              <svg id="clos_size"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  fill="currentColor"
+                  d="M22.5 14a1.5 1.5 0 0 0-3 0zm-3 5a1.5 1.5 0 0 0 3 0zm-17.928-.459a1.5 1.5 0 1 0 2.856.918L3 19zm10 .918a1.5 1.5 0 1 0 2.856-.918L13 19zM8.653 5.476l-1.428.459zm-1.306 0l1.428.459zM21 14h-1.5v5h3v-5zm-2.5 5v-1.5a1 1 0 0 1-1-1h-3a4 4 0 0 0 4 4zm2.5-2.5h-1.5a1 1 0 0 1-1 1v3a4 4 0 0 0 4-4zM18.5 14v1.5a1 1 0 0 1 1 1h3a4 4 0 0 0-4-4zm0 0v-1.5a4 4 0 0 0-4 4h3a1 1 0 0 1 1-1zM3 19l1.428.459L8.775 5.935l-1.428-.459l-1.428-.459l-4.347 13.524zM8.653 5.476l-1.428.459l4.347 13.524L13 19l1.428-.459l-4.347-13.524zM4.286 15v1.5h7.428v-3H4.286zM8 5v1.5a.81.81 0 0 1-.775-.565l1.428-.459l1.428-.459A2.19 2.19 0 0 0 8 3.5zm0 0V3.5c-.95 0-1.79.613-2.081 1.517l1.428.459l1.428.459A.81.81 0 0 1 8 6.5z"
+                />
+              </svg>
+              <input id="font_sizee" type="number" style="width: 100px ; height: 70px; position: absolute; top: -100px; border-radius: 20px; box-shadow: 0 5px 5px rgba(0, 0, 0, 0.264); border: none; outline: none; display: none;font-size: 20px;">
+            </button>
+            <span>حجم الخط</span>
+          </div>
+          <!-- <div>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+              >
+                <path d="M0 0h16v16H0z" fill="none" />
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m7 5l4 8.5h2.5L8 2.5l-4.5 11m-1 0h2m5 0h5m-9-4H9"
+                />
+              </svg>
+            </button>
+            <span>نوع الخط</span>
+          </div> -->
+          <div>
+            <button id="B">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+              >
+                <path d="M0 0h16v16H0z" fill="none" />
+                <path
+                  fill="currentColor"
+                  d="M4 3.1C4 2.5 4.5 2 5.1 2h3c2.1 0 3.4 1.4 3.4 3.4c0 .9-.3 2-.7 2.6c.8.6 1.4 1.2 1.4 2.5c0 2.7-2.1 3.5-3.6 3.5H5.1c-.6 0-1.1-.5-1.1-1.1zM6 9v3h2.4c.7 0 1.5-.5 1.5-1.5S9.1 9 8.4 9zm0-2h2.2c.9 0 1.5-.7 1.5-1.5S9.1 4 8.3 4H6z"
+                />
+              </svg>
+            </button>
+            <span>سماكة الخط</span>
+          </div>
+          <div>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="0.75em"
+                height="1em"
+                viewBox="0 0 384 512"
+              >
+                <path d="M0 0h384v512H0z" fill="none" />
+                <path
+                  fill="currentColor"
+                  d="M128 64c0-17.7 14.3-32 32-32h192c17.7 0 32 14.3 32 32s-14.3 32-32 32h-58.7L160 416h64c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h58.7L224 96h-64c-17.7 0-32-14.3-32-32"
+                />
+              </svg>
+            </button>
+            <span>خط مائل</span>
+          </div>
+          <!-- <div> -->
+            <!-- <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12 2a1 1 0 0 1 1 1v9a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1"
+                  clip-rule="evenodd"
+                />
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12.707 2.293a1 1 0 0 0-1.414 0l-3 3a1 1 0 0 0 1.414 1.414L12 4.414l2.293 2.293a1 1 0 1 0 1.414-1.414zM12 22a1 1 0 0 1-1-1v-9a1 1 0 1 1 2 0v9a1 1 0 0 1-1 1"
+                  clip-rule="evenodd"
+                />
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M11.293 21.707a1 1 0 0 0 1.414 0l3-3a1 1 0 0 0-1.414-1.414L12 19.586l-2.293-2.293a1 1 0 0 0-1.414 1.414zM2 12a1 1 0 0 1 1-1h9a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1"
+                  clip-rule="evenodd"
+                />
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M2.293 11.293a1 1 0 0 0 0 1.414l3 3a1 1 0 0 0 1.414-1.414L4.414 12l2.293-2.293a1 1 0 0 0-1.414-1.414zM22 12a1 1 0 0 1-1 1h-9a1 1 0 1 1 0-2h9a1 1 0 0 1 1 1"
+                  clip-rule="evenodd"
+                />
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M21.707 12.707a1 1 0 0 0 0-1.414l-3-3a1 1 0 1 0-1.414 1.414L19.586 12l-2.293 2.293a1 1 0 0 0 1.414 1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <span>تحريك الخط</span> -->
+          <!-- </div> -->
+          <!-- <div>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <g fill="none">
+                  <rect
+                    width="5.5"
+                    height="16.77"
+                    fill="currentColor"
+                    opacity=".2"
+                    rx="2"
+                    transform="matrix(0 -1 -1 0 18.46 7.5)"
+                  />
+                  <rect
+                    width="4.09"
+                    height="6.05"
+                    fill="currentColor"
+                    opacity=".2"
+                    rx="1"
+                    transform="matrix(-1 0 0 1 14.93 15.94)"
+                  />
+                  <rect
+                    width="5.5"
+                    height="16.77"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    rx="2"
+                    transform="matrix(0 -1 -1 0 18.46 7.5)"
+                  />
+                  <rect
+                    width="4.09"
+                    height="6.05"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    rx="1"
+                    transform="matrix(-1 0 0 1 14.93 15.94)"
+                  />
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M18.48 4.62h.94a2.88 2.88 0 0 1 .83 5.64l-4.02 1.2c-1.14.34-1.72.5-2.15.84a3 3 0 0 0-1 1.34c-.2.5-.2 1.1-.2 2.3"
+                  />
+                </g>
+              </svg>
+            </button>
+            <span>ثيم </span>
+          </div> -->
+          <!-- <div>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  fill="currentColor"
+                  d="M20 14c-.092.064-2 2.083-2 3.5c0 1.494.949 2.448 2 2.5c.906.044 2-.891 2-2.5c0-1.5-1.908-3.436-2-3.5M9.586 20c.378.378.88.586 1.414.586s1.036-.208 1.414-.586l7-7l-.707-.707L11 4.586L8.707 2.293L7.293 3.707L9.586 6L4 11.586c-.378.378-.586.88-.586 1.414s.208 1.036.586 1.414zM11 7.414L16.586 13H5.414z"
+                />
+              </svg>
+            </button>
+            <span>لون الخلفية </span>
+          </div> -->
+          <div>
+            <button  onclick="document.getElementById('image-uploader').click()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M2 6a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"
+                  />
+                  <circle cx="8.5" cy="8.5" r="2.5" />
+                  <path
+                    d="M14.526 12.621L6 22h12.133A3.867 3.867 0 0 0 22 18.133V18c0-.466-.175-.645-.49-.99l-4.03-4.395a2 2 0 0 0-2.954.006"
+                  />
+                </g>
+              </svg>
+            </button>
+            <span>خلفية (صورة)</span>
+          </div>
+                      <div>
+            <button id="download-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+            <path fill="currentColor" d="m12 16l-5-5l1.4-1.45l2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z"/>
+            </svg>
+            </button>
+            <span>حفظ الصورة</span>
+            </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <!-- HEART -->
+      <svg id="heart"
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 24 24"
+      >
+        <path d="M0 0h24v24H0z" fill="none" />
+        <g fill="none">
+          <path
+            fill="currentColor"
+            d="M17.25 3.35c-1.8 0-3.27.9-4.23 1.8c-.55.52-.82.78-1.02.78s-.47-.26-1.02-.78a6.3 6.3 0 0 0-4.23-1.8C3.4 3.35.88 7.17 1.96 11.2c1.03 3.85 5.67 7.26 9.5 9.85c.26.18.39.27.54.27s.29-.09.55-.27c3.93-2.58 8.46-6 9.49-9.85c1.08-4.04-1.44-7.86-4.79-7.86"
+            opacity=".2"
+          />
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            d="M17.25 3.35c-1.8 0-3.27.9-4.23 1.8c-.55.52-.82.78-1.02.78s-.47-.26-1.02-.78a6.3 6.3 0 0 0-4.23-1.8C3.4 3.35.88 7.17 1.96 11.2c1.05 3.9 4.7 6.88 9.53 9.9c.25.15.37.23.51.23s.27-.07.52-.22c5.28-3.17 8.47-6 9.52-9.91c1.08-4.04-1.44-7.86-4.79-7.86"
+          />
+        </g>
+      </svg>
+
+      <!-- TELEGRAM -->
+     <a href="https://t.me/0996778239">
+         <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 48 48"
+      >
+        <path d="M0 0h48v48H0z" fill="none" />
+        <path
+          fill="currentColor"
+          d="M41.42 7.309s3.885-1.515 3.56 2.164c-.107 1.515-1.078 6.818-1.834 12.553l-2.59 16.99s-.216 2.489-2.159 2.922c-1.942.432-4.856-1.515-5.396-1.948c-.432-.325-8.094-5.195-10.792-7.575c-.756-.65-1.62-1.948.108-3.463L33.649 18.13c1.295-1.3 2.59-4.33-2.806-.65l-15.11 10.28s-1.727 1.083-4.964.109l-7.016-2.165s-2.59-1.623 1.835-3.246c10.793-5.086 24.068-10.28 35.831-15.15"
+        />
+      </svg>
+     </a>
+
+      <!-- FACEBOOk -->
+     <a href="https://www.facebook.com/share/1CDC3fheEn/">
+         <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 24 24"
+      >
+        <path d="M0 0h24v24H0z" fill="none" />
+        <g fill="none">
+          <g clip-path="url(#SVGXv8lpc2Y)">
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M0 12.067C0 18.034 4.333 22.994 10 24v-8.667H7V12h3V9.333c0-3 1.933-4.666 4.667-4.666c.866 0 1.8.133 2.666.266V8H15.8c-1.467 0-1.8.733-1.8 1.667V12h3.2l-.533 3.333H14V24c5.667-1.006 10-5.966 10-11.933C24 5.43 18.6 0 12 0S0 5.43 0 12.067"
+              clip-rule="evenodd"
+            />
+          </g>
+          <defs>
+            <clipPath id="SVGXv8lpc2Y">
+              <path fill="#fff" d="M0 0h24v24H0z" />
+            </clipPath>
+          </defs>
+        </g>
+      </svg>
+     </a>
+
+      <!-- WHATSAPP -->
+   <a href="https://wa.me/0996778239">
+       <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 24 24"
+      >
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path
+          fill="currentColor"
+          d="M8.886 7.17c.183.005.386.015.579.443c.128.285.343.81.519 1.238c.137.333.249.607.277.663c.064.128.104.275.02.448l-.028.058a1.4 1.4 0 0 1-.23.37l-.143.17c-.085.104-.17.206-.242.278c-.129.128-.262.266-.114.522s.668 1.098 1.435 1.777a6.6 6.6 0 0 0 1.903 1.2q.105.045.17.076c.257.128.41.108.558-.064c.149-.173.643-.749.817-1.005c.168-.256.34-.216.578-.128c.238.089 1.504.71 1.761.837l.143.07c.179.085.3.144.352.23c.064.109.064.62-.148 1.222c-.218.6-1.267 1.176-1.742 1.22l-.135.016c-.436.052-.988.12-2.956-.655c-2.426-.954-4.027-3.32-4.35-3.799l-.053-.076l-.006-.008c-.147-.197-1.048-1.402-1.048-2.646c0-1.19.587-1.81.854-2.092l.047-.05a.95.95 0 0 1 .687-.32c.173 0 .347 0 .495.005"
+        />
+        <path
+          fill="currentColor"
+          fill-rule="evenodd"
+          d="M2.184 21.331a.4.4 0 0 0 .487.494l4.607-1.204a10 10 0 0 0 4.76 1.207h.004c5.486 0 9.958-4.446 9.958-9.912a9.83 9.83 0 0 0-2.914-7.011A9.92 9.92 0 0 0 12.042 2c-5.486 0-9.958 4.446-9.958 9.911c0 1.739.458 3.447 1.33 4.954zm2.677-4.068a1.5 1.5 0 0 0-.148-1.15a8.4 8.4 0 0 1-1.129-4.202c0-4.63 3.793-8.411 8.458-8.411c2.27 0 4.388.877 5.986 2.468a8.33 8.33 0 0 1 2.472 5.948c0 4.63-3.793 8.412-8.458 8.412h-.005a8.5 8.5 0 0 1-4.044-1.026a1.5 1.5 0 0 0-1.094-.132l-2.762.721z"
+          clip-rule="evenodd"
+        />
+      </svg>
+   </a>
+    </footer>
+    <a href="">
+      <div class="home_back" style="color: #2f4e6b;">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+        >
+          <path d="M0 0h24v24H0z" fill="none" />
+          <g
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          >
+            <path
+              d="M21 19v-6.733a4 4 0 0 0-1.245-2.9L13.378 3.31a2 2 0 0 0-2.755 0L4.245 9.367A4 4 0 0 0 3 12.267V19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2"
+            />
+            <path d="M9 15a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v6H9z" />
+          </g>
+        </svg>
+      </div>
+    </a>
+
+    <!-- CUS SECTION -->
+
+    <div id="items" class="items" style="display: none">
+      <div id="close" class="close">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+        >
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m18 18l-6-6m0 0L6 6m6 6l6-6m-6 6l-6 6"
+          />
+        </svg>
+      </div>
+      <div class="card">
+        <div class="ca">Tajawal</div>
+        <div class="ca">Almarai</div>
+        <div class="ca">Cairo</div>
+      </div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </div>
+
+
+    <input type="file" id="image-uploader" accept="image/*" style="display: none;">
+
+    <div id="box_heart" class="box_heart">
+        هذا الجزء قيد التنفيذ
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="-2 -3 24 24">
+            <path d="M-2 -3h24v24H-2z" fill="none" />
+            <path fill="currentColor" d="m12.8 1.613l6.701 11.161c.963 1.603.49 3.712-1.057 4.71a3.2 3.2 0 0 1-1.743.516H3.298C1.477 18 0 16.47 0 14.581c0-.639.173-1.264.498-1.807L7.2 1.613C8.162.01 10.196-.481 11.743.517c.428.276.79.651 1.057 1.096M10 14a1 1 0 1 0 0-2a1 1 0 0 0 0 2m0-9a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0V6a1 1 0 0 0-1-1" />
+            </svg>
+
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
