@@ -418,43 +418,47 @@ footer a:nth-child(2) {
     background-size: cover;
 }
 
-.box_heart{
-    width: 90%;
-    height: 50px;
-    position: absolute;
-    bottom: 80px;
-    left: 20px;
+.box_heart {
+    width: calc(100% - 40px); /* عرض يتناسب تماماً مع الشاشة */
+    min-height: 55px;         /* يسمح للارتفاع بالتوسع إذا كان النص سطرين */
+    position: fixed;           /* تثبيت المربع بالنسبة للشاشة بشكل مضموم */
+    bottom: 90px;             /* يرفع المربع فوق الـ Footer تماماً */
+    left: 50%;
+    transform: translateX(-50%); /* يضمن التوسيط في نص الشاشة بالضبط */
     background-color: var(--main-color);
-    box-shadow: 0 5px 5px var(--sec-color);
-    border-radius: 20px;
-     display: flex;
+    box-shadow: 0 5px 15px rgba(47, 78, 107, 0.3);
+    border-radius: 15px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 16px;           /* حجم خط مناسب ومريح للعين */
+    font-weight: bold;
     gap: 10px;
+    padding: 10px 15px;
     opacity: 0;
-    
-
-
+    pointer-events: none;      /* يمنع اعتراض اللمس أثناء اختفائه */
+    transition: all 0.3s ease-in-out;
+    z-index: 999;              /* يضمن ظهوره فوق كل العناصر */
+    text-align: center;
+    line-height: 1.4;          /* يمنع تداخل الأسطر والكلمات */
 }
-.box_heart svg{
-    color: yellow;
-    font-size: 40px;
-    filter: drop-shadow(0 5px 5px var(--sec-color));
+
+.box_heart svg {
+    color: #f1c40f;
+    font-size: 26px;
+    flex-shrink: 0;            /* يمنع انكماش الأيقونة مع النصوص الطويلة */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
-.box_heart::before{
+
+.box_heart::before {
     position: absolute;
     content: "";
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
     background-color: var(--main-color);
-    left: 20px;
-    rotate: -45deg;
-    bottom: -10px;
-    /* border-left: solid 2px var(--sec-color);
-    border-bottom: solid 2px var(--sec-color); */
- 
-
+    left: 50%;                 /* يجعل السهم في منتصف المربع بالضبط من الأسفل */
+    transform: translateX(-50%) rotate(45deg);
+    bottom: -7px;
 }
 
 #castum_content {
@@ -465,4 +469,21 @@ footer a:nth-child(2) {
     direction: rtl;
     text-align: center; /* محاذاة النص بالمنتصف */
     word-break: break-word; /* منع خروج الكلمات عن المربع */
+}
+
+/* تنسيق الاسم في الزاوية */
+#image {
+    position: relative; /* ضروري عشان نثبت الاسم بالنسبة إله */
+    overflow: hidden;    /* عشان أي شي برة المربع ما يبان */
+}
+
+.corner-name {
+    position: absolute;
+    bottom: 10px;        /* مسافة من تحت */
+    right: 15px;         /* مسافة من اليمين */
+    font-size: 12px;     /* خط صغير وأنيق */
+    color: var(--sec-color); /* لون متناسق */
+    opacity: 0.7;        /* شفافية خفيفة */
+    font-weight: 300;
+    pointer-events: none; /* عشان ما يضايق المستخدم لو كبس عليه */
 }
